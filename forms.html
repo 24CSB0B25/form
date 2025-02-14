@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form(JS)</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 100%;
+            max-width: 500px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="date"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"], input[type="reset"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 32px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        input[type="reset"] {
+            background-color: #f44336;
+        }
+        input[type="reset"]:hover {
+            background-color: #d32f2f;
+        }
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form onsubmit="return validateForm()">
+        
+        <label for="firstname">First Name:</label><br>
+        <input type="text" id="firstname" name="firstname"><br><br>
+        
+        <label for="lastname">Last Name:</label><br>
+        <input type="text" id="lastname" name="lastname"><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="confirmPassword">Confirm Password:</label><br>
+        <input type="password" id="confirmPassword" name="confirmPassword"><br><br>
+
+        <label for="mobileno">Mobile No.:</label><br>
+        <input type="text" id="mobileno" name="mobileno"><br><br>
+
+        <label for="houseno">House No.:</label><br>
+        <input type="text" id="houseno" name="houseno"><br><br>
+
+        <label for="streetno">Street No.:</label><br>
+        <input type="text" id="streetno" name="streetno"><br><br>
+
+        <label for="city">City:</label><br>
+        <input type="text" id="city" name="city"><br><br>
+
+        <label for="pincode">Pin code:</label><br>
+        <input type="text" id="pincode" name="pincode"><br><br>
+
+        <label for="state">State:</label><br>
+        <input type="text" id="state" name="state"><br><br>
+     
+        <label for="country">Country:</label><br>
+        <input type="text" id="country" name="country"><br><br>
+  
+        <p>Gender</p>
+        <select name="gender" id="gender">
+            <option value="male" selected>Male</option>
+            <option value="female">Female</option>
+            <option value="others">Others</option>
+        </select><br><br>
+
+        <p>Source of identity</p>
+        <input type="radio" id="aadhar" name="identity" value="Aadhar">
+        <label for="aadhar">Aadhar</label><br>
+        <input type="radio" id="pan" name="identity" value="PAN">
+        <label for="pan">PAN</label><br><br>
+
+        <p>Interested area</p>
+        <select name="interest" id="interest">
+            <option value="machine learning" selected>Machine learning</option>
+            <option value="Deep learning">Deep learning</option>
+            <option value="artificial intelligence">Artificial intelligence</option>
+        </select><br><br>
+
+        <p>Select your age:</p>
+        <input type="radio" id="age1" name="age" value="0-18">
+        <label for="age1">0 to 18</label><br>
+        <input type="radio" id="age2" name="age" value="18 above">
+        <label for="age2">18 above</label><br><br>
+
+        <p>Select your favorite computing language:</p>
+        <input type="checkbox" id="java" name="language" value="Java">
+        <label for="java">Java</label><br>
+        <input type="checkbox" id="cpp" name="language" value="Cpp">
+        <label for="cpp">C++</label><br>
+        <input type="checkbox" id="c" name="language" value="C">
+        <label for="c">C</label><br>
+        <input type="checkbox" id="python" name="language" value="Python">
+        <label for="python">Python</label><br><br>
+         
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+    </form>
+
+</body>
+</html>
